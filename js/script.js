@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const filtroTipo = document.getElementById('filtroTipo');
     const filtroPrecio = document.getElementById('filtroPrecio');
 
-    fetch('precios.json')
+    fetch('https://github.com/Lean998/TMP_DWEB/blob/main/json/precios.json')
     .then(response => response.json())
     .then(servicios =>{
         mostrarServicios(servicios);
