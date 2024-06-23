@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const filtroTipo = document.getElementById('filtroTipo');
     const filtroPrecio = document.getElementById('filtroPrecio');
 
-    fetch('G:\Mi unidad\Diseño web\TPM-Joyeria\codigo\.vscode\json\precios.json')
+    fetch('precios.json')
     .then(response => response.json())
     .then(servicios =>{
         mostrarServicios(servicios);
