@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precios</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="/recursos/logo.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="/recursos/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/html/inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="/recursos/wsp.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="/recursos/instagram.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="/recursos/facebook.png"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/recursos/Imagen-carrousel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/recursos/Imagen-carrousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/recursos/Imagen-carrousel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+<!-- Boton de reserva-->
+      <div class="d-grid gap-3 col-8 mx-auto">
+        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#modalForm">Pedí tu turno</button>
+      </div>
+      
+<!-- MODAL-->
+<div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Formulario de Reservas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form class="needs-validation" novalidate>
+                  <div class="row mb-3">
+                      <div class="form-group col-md-12">
+                          <label for="inputUsername">Nombre y apellido</label>
+                          <input type="text" class="form-control" id="inputUsername" pattern="^[a-zA-Z\s]{3,15}$" placeholder="Nombre y apellido" required>
+                          <div class="invalid-feedback">
+                              Por favor ingrese su nombre.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row mb-3">
+                      <div class="form-group col-md-6">
+                          <label for="inputPhone">Teléfono</label>
+                          <input type="tel" class="form-control" id="inputPhone" placeholder="Teléfono" required pattern="[0-9]{10}">
+                          <div class="invalid-feedback">
+                              Por favor ingrese un teléfono válido.
+                          </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="inputCountry">Seleccione lugar de trabajo</label>
+                          <select class="form-control" id="inputCountry" required>
+                              <option value="" disabled selected>Seleccione lugar</option>
+                              <option value="mañana">Mañana (8hs - 12hs)</option>
+                              <option value="tarde">Tarde (13hs - 20hs)</option>
+                          </select>
+                          <div class="invalid-feedback">
+                              Por favor seleccione un horario.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="inputGender">Seleccione el largo de su cabello:</label>
+                      <div class="form-check">
+                          <input type="radio" class="form-check-input" id="corto" name="hair_length" value="corto" required>
+                          <label class="form-check-label" for="corto">Corto</label>
+                      </div>
+                      <div class="form-check">
+                          <input type="radio" class="form-check-input" id="medio" name="hair_length" value="medio">
+                          <label class="form-check-label" for="medio">Medio</label>
+                      </div>
+                      <div class="form-check">
+                          <input type="radio" class="form-check-input" id="largo" name="hair_length" value="largo">
+                          <label class="form-check-label" for="largo">Largo</label>
+                      </div>
+                      <div class="invalid-feedback" id="genderError">
+                          Por favor seleccione una opción.
+                      </div>
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="inputMessage">Mensaje</label>
+                      <textarea class="form-control" id="inputMessage" rows="3" required></textarea>
+                      <div class="invalid-feedback">
+                          Por favor ingrese su mensaje.
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-success my-3" id="btn-confirmarReserva">Enviar</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="serviciosContainer" class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <label for="filtroServicio">Seleccione servicio:</label>
+      <select id="filtroServicio" class="botonfiltro col-3">
+        <option value="todos">Todos</option>
+        <option value="cortes">Cortes</option>
+        <option value="color">Color</option>
+        <option value="peinados">Peinados</option>
+        <option value="tratamientos">Tratamientos</option>
+      </select>
+    </div>
+    <div class="col-4">
+      <label for="filtroPrecio">Seleccione precio:</label>
+      <select id="filtroPrecio" class="botonfiltro col-3">
+        <option value="todos">Todos</option>
+        <option value="menos">Menos de $15.000</option>
+        <option value="entre">$10.000 a $30.000</option>
+        <option value="mas">Más de $30.000</option>
+      </select>
+    </div>
+    <div class="col-4">
+      <label for="filtroTipo">Seleccione tipo:</label>
+      <select id="filtroTipo" class="botonfiltro col-3">
+        <option value="todos">Todos</option>
+        <option value="mujer">Mujer</option>
+        <option value="hombre">Hombre</option>
+        <option value="niños">Niños</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+      <div class="precio">
+        <UL>
+            <LI><H2>Cortes</H2></LI>
+            <UL>
+                <LI>Mujer:</LI>
+                <UL>
+                    <LI>Corte sin secado: $9.000</LI>
+                    <LI>Corte con secado: $12.000</LI>
+                    <LI>Corte de puntas: $5.000</LI>
+                    <LI>Corte flequillo: $5.000</LI>
+                </UL>
+                <LI>Hombre</LI>
+                <UL>
+                    <LI>Corte sin lavado: $10.000</LI>
+                    <LI>Corte con lavado: $12.000</LI>
+                    <LI>Perfilado de cejas: $3.000</LI>
+                    <LI>Barba: $8.000</LI>
+                    <LI>Afeitado completo: $10.000</LI>
+                </UL>
+                <LI>Niños hasta 10 años: $11.000</LI>
+            </UL>
+            <br><br>
+            <LI><H2>Color</H2></LI>
+            <UL>
+                <LI>Tintura completa: desde $25.000</LI>
+                <LI>Balagaye: desde $65.000</LI>
+                <LI>Mechas con gorra: desde $38.000</LI>
+                <LI>Mechas con aluminio: desde $50.000</LI>
+            </UL>
+        </UL>
+        <UL>
+          <br><br>
+            <LI><H2>Peinados</H2></LI>
+            <UL>
+                <LI>Brushing: desde $8.000</LI>
+                <LI>Brushing & planchita/ondas: $15.000</LI>
+                <LI>Prueba de peinado: $14.000</LI>
+                <LI>Semi-recogido: $23.000</LI>
+                <LI>Recogido: $28.000</LI>
+                <LI>Diseño de trenzas: desde $16.000</LI>
+                <LI>Peinado de novia/15 años: $33.000</LI>
+            </UL>
+        </UL>
+        <UL>
+          <br><br>
+            <LI><H2>Tratamientos</H2></LI>
+            <UL>
+                <LI>Ampolla: $13.200</LI>
+                <LI>Baño de crema: desde $17.500</LI>
+                <LI>Celulas madres: desde $37.500</LI>
+                <LI>Shock de queratina (sin formol): desde $43.800</LI>
+                <LI>Shock de queratina (con formol): desde $51.200</LI>
+                <LI>Botox capilar (sin formol): desde $43.800</LI>
+                <LI>Botox capilar (con formol): desde $51.200</LI>
+                <LI>Alisado (sin formol): desde $41.400</LI>
+                <LI>Alisado (con formol): desde $51.400</LI>
+            </UL>
+        </UL>
+    </div>
+
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="imagen col-3">
+                <a href="#"><img src="/recursos/logo.png"></a>
+              </div>
+                <div class="nav-item col-2">
+                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                </div>
+                <div class="nav-item col-3">
+                  <a class="nav-link" href="/html/inicio.html">Servicios</a>
+                </div>
+                <div class="nav-item col-2">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </div>
+                <div class="nav-item col-2">
+                  <a class="nav-link" href="#">Contacto</a>
+                <div class="row">
+                  <div class="nav-item col-4">
+                    <a class="nav-link" href="#"><img src="/recursos/wsp.png"></a>
+                  </div>
+                  <div class="nav-item col-4">
+                    <a class="nav-link" href="#"><img src="/recursos/instagram.png"></a>
+                  </div>
+                  <div class="nav-item col-4">
+                    <a class="nav-link" href="#"><img src="/recursos/facebook.png"></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        <p>&copy; GLAM2024. Todos los derechos reservados.</p>
+</footer>
+
+<!-- MODAL DE CONFIRMACIÓN -->
+<div class="modal fade" id="modalConfReserva" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalConfReservaLabel">Confirmación de Reserva</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¡<span id="nombreSpanReserva"></span> Hemos recibido tu mensaje! <br>
+            Pronto nos estaremos comunicando contigo al: <span id="telefonoSpanReserva"></span> en el horario acordado.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  (function() {
+    'use strict';
+    var forms = document.querySelectorAll('.needs-validation');
+    Array.prototype.slice.call(forms)
+      .forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          else{
+            event.preventDefault();
+            
+            var telefono = document.getElementById('inputPhone').value;
+            var nombre = document.getElementById('inputUsername').value;
+            
+            var telefonoSpan = document.getElementById('telefonoSpanReserva');
+            var nombreSpan = document.getElementById('nombreSpanReserva');
+
+            nombreSpan.textContent = nombre;
+            telefonoSpan.textContent = '"'+telefono+'"';
+
+            var modalElement = document.getElementById('modalConfReserva');
+            var modalInstance = new bootstrap.Modal(modalElement);
+            modalInstance.show();
+            form.reset();
+            form.classList.remove('was-validated');
+
+          }
+          // Verifica si selecciono el largo del cabello
+          var isGenderSelected = false;
+          var genderRadios = document.getElementsByName('hair_length');
+
+          for (var i = 0; i < genderRadios.length; i++) {
+            if (genderRadios[i].checked) {
+              isGenderSelected = true;
+              break;
+            } 
+          } 
+
+          if (!isGenderSelected) { 
+            document.getElementById('genderError').style.display = 'block';
+          } else {
+            document.getElementById('genderError').style.display = 'none';
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+  })();
+</script>
+</body>
+</html>
