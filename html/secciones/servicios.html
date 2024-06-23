@@ -142,7 +142,7 @@
   </div>
 </div>
 
-<div id="serviciosContainer" class="container-fluid">
+<div class="container-fluid">
   <div class="row">
     <div class="col-4">
       <label for="filtroServicio">Seleccione servicio:</label>
@@ -176,65 +176,58 @@
 </div>
 
 
-      <div class="precio">
-        <UL>
-            <LI><H2>Cortes</H2></LI>
-            <UL>
-                <LI>Mujer:</LI>
-                <UL>
-                    <LI>Corte sin secado: $9.000</LI>
-                    <LI>Corte con secado: $12.000</LI>
-                    <LI>Corte de puntas: $5.000</LI>
-                    <LI>Corte flequillo: $5.000</LI>
-                </UL>
-                <LI>Hombre</LI>
-                <UL>
-                    <LI>Corte sin lavado: $10.000</LI>
-                    <LI>Corte con lavado: $12.000</LI>
-                    <LI>Perfilado de cejas: $3.000</LI>
-                    <LI>Barba: $8.000</LI>
-                    <LI>Afeitado completo: $10.000</LI>
-                </UL>
-                <LI>Niños hasta 10 años: $11.000</LI>
-            </UL>
-            <br><br>
-            <LI><H2>Color</H2></LI>
-            <UL>
-                <LI>Tintura completa: desde $25.000</LI>
-                <LI>Balagaye: desde $65.000</LI>
-                <LI>Mechas con gorra: desde $38.000</LI>
-                <LI>Mechas con aluminio: desde $50.000</LI>
-            </UL>
-        </UL>
-        <UL>
-          <br><br>
-            <LI><H2>Peinados</H2></LI>
-            <UL>
-                <LI>Brushing: desde $8.000</LI>
-                <LI>Brushing & planchita/ondas: $15.000</LI>
-                <LI>Prueba de peinado: $14.000</LI>
-                <LI>Semi-recogido: $23.000</LI>
-                <LI>Recogido: $28.000</LI>
-                <LI>Diseño de trenzas: desde $16.000</LI>
-                <LI>Peinado de novia/15 años: $33.000</LI>
-            </UL>
-        </UL>
-        <UL>
-          <br><br>
-            <LI><H2>Tratamientos</H2></LI>
-            <UL>
-                <LI>Ampolla: $13.200</LI>
-                <LI>Baño de crema: desde $17.500</LI>
-                <LI>Celulas madres: desde $37.500</LI>
-                <LI>Shock de queratina (sin formol): desde $43.800</LI>
-                <LI>Shock de queratina (con formol): desde $51.200</LI>
-                <LI>Botox capilar (sin formol): desde $43.800</LI>
-                <LI>Botox capilar (con formol): desde $51.200</LI>
-                <LI>Alisado (sin formol): desde $41.400</LI>
-                <LI>Alisado (con formol): desde $51.400</LI>
-            </UL>
-        </UL>
-    </div>
+<div id="serviciosContainer">
+  <div class="categoria">
+      <h2>Cortes</h2>
+      <ul>
+          <li data-categoria="cortes" data-tipo="mujer" data-precio="9000">Corte sin secado: $9.000</li>
+          <li data-categoria="cortes" data-tipo="mujer" data-precio="12000">Corte con secado: $12.000</li>
+          <li data-categoria="cortes" data-tipo="mujer" data-precio="5000">Corte de puntas: $5.000</li>
+          <li data-categoria="cortes" data-tipo="mujer" data-precio="5000">Corte flequillo: $5.000</li>
+          <li data-categoria="cortes" data-tipo="hombre" data-precio="10000">Corte sin lavado: $10.000</li>
+          <li data-categoria="cortes" data-tipo="hombre" data-precio="12000">Corte con lavado: $12.000</li>
+          <li data-categoria="cortes" data-tipo="hombre" data-precio="3000">Perfilado de cejas: $3.000</li>
+          <li data-categoria="cortes" data-tipo="hombre" data-precio="8000">Barba: $8.000</li>
+          <li data-categoria="cortes" data-tipo="hombre" data-precio="10000">Afeitado completo: $10.000</li>
+          <li data-categoria="cortes" data-tipo="niños" data-precio="11000">Niños hasta 10 años: $11.000</li>
+      </ul>
+  </div>
+  <div class="categoria">
+      <h2>Color</h2>
+      <ul>
+          <li data-categoria="color" data-tipo="unisex" data-precio="25000">Tintura completa: desde $25.000</li>
+          <li data-categoria="color" data-tipo="unisex" data-precio="65000">Balayage: desde $65.000</li>
+          <li data-categoria="color" data-tipo="unisex" data-precio="38000">Mechas con gorra: desde $38.000</li>
+          <li data-categoria="color" data-tipo="unisex" data-precio="50000">Mechas con aluminio: desde $50.000</li>
+      </ul>
+  </div>
+  <div class="categoria">
+      <h2>Peinados</h2>
+      <ul>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="8000">Brushing: desde $8.000</li>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="15000">Brushing & planchita/ondas: $15.000</li>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="14000">Prueba de peinado: $14.000</li>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="23000">Semi-recogido: $23.000</li>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="28000">Recogido: $28.000</li>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="16000">Diseño de trenzas: desde $16.000</li>
+          <li data-categoria="peinados" data-tipo="mujer" data-precio="33000">Peinado de novia/15 años: $33.000</li>
+      </ul>
+  </div>
+  <div class="categoria">
+      <h2>Tratamientos</h2>
+      <ul>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="13200">Ampolla: $13.200</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="17500">Baño de crema: desde $17.500</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="37500">Células madre: desde $37.500</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="43800">Shock de queratina (sin formol): desde $43.800</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="51200">Shock de queratina (con formol): desde $51.200</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="43800">Botox capilar (sin formol): desde $43.800</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="51200">Botox capilar (con formol): desde $51.200</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="41400">Alisado (sin formol): desde $41.400</li>
+          <li data-categoria="tratamientos" data-tipo="unisex" data-precio="47700">Alisado (con formol): desde $47.700</li>
+      </ul>
+  </div>
+</div>
 
 
     <footer class="footer mt-auto py-3 bg-dark text-white text-center">
@@ -290,12 +283,10 @@
   </div>
 </div>
 
-<script src="/js/script.js"></script>
 <!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <script>
   (function() {
     'use strict';
@@ -347,5 +338,6 @@
       });
   })();
 </script>
+<script src="/js/script.js"></script>
 </body>
 </html>
