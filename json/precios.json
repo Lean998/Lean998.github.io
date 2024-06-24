@@ -1,210 +1,49 @@
-[
-    {
-        "id": 1, 
-        "nombre": "Corte sin secado", 
-        "precio": 9000, "categoria": "cortes", 
-        "tipo": "mujer"
-    },
-    {
-    "id": 2,
-    "nombre": "Corte con secado",
-    "precio": 12000,
-    "categoria": "cortes",
-    "tipo": "mujer"
-    },
-    {
-    "id": 3,
-    "nombre": "Corte de puntas",
-    "precio": 5000,
-    "categoria": "cortes",
-    "tipo": "mujer"
-    },
-    {
-    "id": 4,
-    "nombre": "Corte flequillo",
-    "precio": 5000,
-    "categoria": "cortes",
-    "tipo": "mujer"
-    },
-    {
-    "id": 5,
-    "nombre": "Corte sin lavado",
-    "precio": 10000,
-    "categoria": "cortes",
-    "tipo": "hombre"
-    },
-    {
-    "id": 6,
-    "nombre": "Corte con lavado",
-    "precio": 12000,
-    "categoria": "cortes",
-    "tipo": "hombre"
-    },
-    {
-    "id": 7,
-    "nombre": "Perfilado de cejas",
-    "precio": 3000,
-    "categoria": "cortes",
-    "tipo": "hombre"
-    },
-    {
-    "id": 8,
-    "nombre": "Barba",
-    "precio": 8000,
-    "categoria": "cortes",
-    "tipo": "hombre"
-    },
-    {
-    "id": 9,
-    "nombre": "Afeitado completo",
-    "precio": 10000,
-    "categoria": "cortes",
-    "tipo": "hombre"
-    },
-    {
-    "id": 10,
-    "nombre": "Niños hasta 10 años",
-    "precio": 11000,
-    "categoria": "cortes",
-    "tipo": "niños"
-    },
-    {
-    "id": 11,
-    "nombre": "Tintura completa",
-    "precio": 25000,
-    "categoria": "color",
-    "tipo": "unisex"
-    },
-    {
-    "id": 12,
-    "nombre": "Balayage",
-    "precio": 65000,
-    "categoria": "color",
-    "tipo": "unisex"
-    },
-    {
-    "id": 13,
-    "nombre": "Mechas con gorra",
-    "precio": 38000,
-    "categoria": "color",
-    "tipo": "unisex"
-    },
-    {
-    "id": 14,
-    "nombre": "Mechas con aluminio",
-    "precio": 50000,
-    "categoria": "color",
-    "tipo": "unisex"
-    },
-    {
-    "id": 15,
-    "nombre": "Brushing",
-    "precio": 8000,
-    "categoria": "peinados",
-    "tipo": "mujer"
-    },
-    {
-    "id": 16,
-    "nombre": "Brushing & planchita/ondas",
-    "precio": 15000,
-    "categoria": "peinados", "tipo": "mujer"
-    },
-    {
-    "id": 17,
-    "nombre": "Prueba de peinado",
-    "precio": 14000,
-    "categoria": "peinados",
-    "tipo": "mujer"
-    },
-    {
-        "id": 18,
-    "nombre": "Semi-recogido",
-    "precio": 23000,
-    "categoria": "peinados",
-    "tipo": "mujer"
-    },
-    {
-    "id": 19,
-    "nombre": "Recogido",
-    "precio": 28000,
-    "categoria": "peinados",
-    "tipo": "mujer"
-    },
-    {
-    "id": 20,
-    "nombre": "Diseño de trenzas",
-    "precio": 16000,
-    "categoria": "peinados",
-    "tipo": "mujer"
-    },
-    {
-    "id": 21,
-    "nombre": "Peinado de novia/15 años",
-    "precio": 33000,
-    "categoria": "peinados",
-    "tipo": "mujer"
-    },
-    {
-    "id": 22,
-    "nombre": "Ampolla",
-    "precio": 13200,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 23,
-    "nombre": "Baño de crema",
-    "precio": 17500,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 24,
-    "nombre": "Células madre",
-    "precio": 37500,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 25,
-    "nombre": "Shock de queratina (sin formol)",
-    "precio": 43800,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 26,
-    "nombre": "Shock de queratina (con formol)",
-    "precio": 51200,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 27,
-    "nombre": "Botox capilar (sin formol)",
-    "precio": 43800,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 28,
-    "nombre": "Botox capilar (con formol)",
-    "precio": 51200,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 29,
-    "nombre": "Alisado (sin formol)",
-    "precio": 41400,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-    },
-    {
-    "id": 30,
-    "nombre": "Alisado (con formol)",
-    "precio": 47700,
-    "categoria": "tratamientos",
-    "tipo": "unisex"
-}
-]
+{
+    "Corte": [
+      { "nombre": "Corte dama sin secado", "precio": 9000, "genero": ["mujer"] },
+      { "nombre": "Corte dama con secado", "precio": 12000, "genero": ["mujer"] },
+      { "nombre": "Corte de puntas", "precio": 5000, "genero": ["mujer"] },
+      { "nombre": "Corte de flequillo", "precio": 5000, "genero": ["mujer"] },
+      { "nombre": "Corte caballero sin lavado", "precio": 10000, "genero": ["hombre"] },
+      { "nombre": "Corte caballero con lavado", "precio": 12000, "genero": ["hombre"] },
+      { "nombre": "Barba", "precio": 8000, "genero": ["hombre"] },
+      { "nombre": "Afeintado completo", "precio": 10000, "genero": ["hombre"] },
+      { "nombre": "Corte niño hasta los 10 años", "precio": 11000, "genero": ["niños"] },
+      { "nombre": "Perefilado de cejas", "precio": 3000, "genero": ["hombre","mujer"] }
+    ],
+  
+    "Color": [
+      {"nombre": "Tinte completo","precio": 25000,"genero": ["mujer", "hombre"]},
+      { "nombre": "Balayage", "precio": 65000, "genero": ["mujer"] },
+      { "nombre": "Mechas con gorra", "precio": 38000, "genero": ["mujer"] },
+      { "nombre": "Mechas con aluminio", "precio": 52700, "genero": ["mujer"] },
+      { "nombre": "Ombré", "precio": 47300, "genero": ["mujer"] },
+      {"nombre": "Coloración fantasía","precio": 68000,"genero": ["mujer", "hombre"]},
+      {"nombre": "Retoque de raíces","precio": 15000,"genero": ["mujer", "hombre"]}
+    ],
+  
+    "Peinado": [
+      { "nombre": "Brushing", "precio": 8000, "genero": ["mujer", "hombre","niños"] },
+      { "nombre": "Brushing & planchita/ondas", "precio": 15000, "genero": ["mujer","niños"] },
+      { "nombre": "Prueba de peinado", "precio": 14000, "genero": ["mujer","niños"] },
+      { "nombre": "Semi-recogido", "precio": 23600, "genero": ["mujer"] },
+      { "nombre": "Recogido", "precio": 28000, "genero": ["mujer","niños"] },
+      { "nombre": "Diseño de trenzas", "precio": 16000, "genero": ["mujer", "niños"] },
+      { "nombre": "Peinado de novia/15 años", "precio": 33000, "genero": ["mujer"] }
+    ],
+  
+    "Tratamiento": [
+      {"nombre": "Ampolla","precio": 13200,"genero": ["mujer", "hombre","niños"]},
+      {"nombre": "Baño de crema","precio": 17500,"genero": ["mujer", "hombre","niños"]},
+      {"nombre": "Celulas madre","precio": 37500,"genero": ["mujer", "hombre","niños"]},
+      {"nombre": "Shock de queratina sin formol", "precio": 43800, "genero": ["mujer", "hombre"] },
+      {"nombre": "Shock de queratina con formol", "precio": 51200, "genero": ["mujer", "hombre"] },
+      {"nombre": "Botox capilar sin formol", "precio": 43800, "genero": ["mujer", "hombre"] },
+      {"nombre": "Botox capilar con formol", "precio": 51200, "genero": ["mujer", "hombre"] },
+      {"nombre": "Tratamiento anticaída","precio": 59200,"genero": ["mujer", "hombre"]},
+      {"nombre": "Tratamiento anti-frizz","precio": 25000,"genero": ["mujer", "hombre","niños"]},
+      {"nombre": "Reparación puntas abiertas","precio": 14000,"genero": ["mujer", "hombre","niños"]},
+      {"nombre": "Alisado sin formol","precio": 41400,"genero": ["mujer", "hombre"]},
+      {"nombre": "Alisado con formol","precio": 47700,"genero": ["mujer", "hombre"]}
+    ]
+  }
