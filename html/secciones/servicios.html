@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/recursos/logo.png" alt=""></a>
+          <a class="navbar-brand" href="/html/inicio.html"><img src="/recursos/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span> 
           </button>
@@ -22,22 +22,22 @@
                 <a class="nav-link" aria-current="page" href="/html/inicio.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link" href="#serviciosContainer">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="/html/inicio.html#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="/html/inicio.html#contacto">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img src="/recursos/wsp.png"></a>
+                <a class="nav-link" href="https://api.whatsapp.com/send?phone=123456" target="_blank"><img src="/recursos/wsp.png"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img src="/recursos/instagram.png"></a>
+                <a class="nav-link" href="https://www.instagram.com" target="_blank"><img src="/recursos/instagram.png"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><img src="/recursos/facebook.png"></a>
+                <a class="nav-link" href="https://www.facebook.com" target="_blank"><img src="/recursos/facebook.png"></a>
               </li>
             </ul>
           </div>
@@ -178,7 +178,7 @@
 
 <div id="serviciosContainer">
   <div class="categoria">
-      <h2>Cortes</h2>
+      <h2 id="cat-cortes">Cortes</h2>
       <ul>
           <li data-categoria="cortes" data-tipo="mujer" data-precio="9000">Corte sin secado: $9.000</li>
           <li data-categoria="cortes" data-tipo="mujer" data-precio="12000">Corte con secado: $12.000</li>
@@ -193,7 +193,7 @@
       </ul>
   </div>
   <div class="categoria">
-      <h2>Color</h2>
+      <h2 id="cat-color">Color</h2>
       <ul>
           <li data-categoria="color" data-tipo="unisex" data-precio="25000">Tintura completa: desde $25.000</li>
           <li data-categoria="color" data-tipo="unisex" data-precio="65000">Balayage: desde $65.000</li>
@@ -202,7 +202,7 @@
       </ul>
   </div>
   <div class="categoria">
-      <h2>Peinados</h2>
+      <h2 id="cat-peinados">Peinados</h2>
       <ul>
           <li data-categoria="peinados" data-tipo="mujer" data-precio="8000">Brushing: desde $8.000</li>
           <li data-categoria="peinados" data-tipo="mujer" data-precio="15000">Brushing & planchita/ondas: $15.000</li>
@@ -214,7 +214,7 @@
       </ul>
   </div>
   <div class="categoria">
-      <h2>Tratamientos</h2>
+      <h2 id="cat-tratamientos">Tratamientos</h2>
       <ul>
           <li data-categoria="tratamientos" data-tipo="unisex" data-precio="13200">Ampolla: $13.200</li>
           <li data-categoria="tratamientos" data-tipo="unisex" data-precio="17500">Baño de crema: desde $17.500</li>
