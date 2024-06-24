@@ -63,7 +63,7 @@
     <ul class="row my-3">
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-categoria-colore.jpg');">
-                <a href="/html/secciones/servicios.html#cat-cortes">
+                <a href="/html/secciones/servicios.html#servicios">
                     <img src="/recursos/Imagen-categoria-colore.jpg" class="img-responsive img-categoria" alt="Categoría Colores">
                     <span class="categoria-texto">Colores</span>
                 </a>
@@ -71,7 +71,7 @@
         </li>
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-cortes.jpg');">
-                <a href="/html/secciones/servicios.html#cat-cortes">
+                <a href="/html/secciones/servicios.html#servicios">
                     <img src="/recursos/Imagen-cortes.jpg" class="img-responsive img-categoria" alt="Categoría Cortes">
                     <span class="categoria-texto">Cortes</span>
                 </a>
@@ -79,7 +79,7 @@
         </li>
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-tratamientos.jpg');">
-                <a href="/html/secciones/servicios.html#cat-tratamientos">
+                <a href="/html/secciones/servicios.html#servicios">
                     <img src="/recursos/Imagen-tratamientos.jpg" class="img-responsive img-categoria" alt="Categoría Tratamientos">
                     <span class="categoria-texto">Tratamientos</span>
                 </a>
@@ -87,7 +87,7 @@
         </li>
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-peinado.jpg');">
-                <a href="/html/secciones/servicios.html#cat-peinados">
+                <a href="/html/secciones/servicios.html#servicios">
                     <img src="/recursos/Imagen-peinado.jpg" class="img-responsive img-categoria" alt="Categoría Peinados">
                     <span class="categoria-texto">Peinados</span>
                 </a>
@@ -181,7 +181,7 @@
             </div>
         </div>
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" onclick="comprobarDatosContacto()">Enviar</button>
         </div>
     </form>
 </div>  
@@ -210,32 +210,5 @@
             <script src="/js/script.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script>
-                var forms = document.getElementsByClassName('needs-validation');
-        
-                Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        } else {
-                            event.preventDefault();  
-                            var email = document.getElementById('inputEmail').value;
-                            var nombre = document.getElementById('inputNombre').value;
-                            var nombreSpan = document.getElementById('nombreSpan');
-                            var emailSpan = document.getElementById('emailSpan');
-                            nombreSpan.textContent = nombre;
-                            emailSpan.textContent = '"' + email + '"';
-        
-                            var modalElement = document.getElementById('modalConfContacto');
-                            var modalInstance = new bootstrap.Modal(modalElement);
-                            modalInstance.show();
-                            form.reset();
-                            form.classList.remove('was-validated');
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            </script>
 </body>
 </html>

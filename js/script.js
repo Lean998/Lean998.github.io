@@ -143,3 +143,30 @@ function comprobarDatosReserva() {
         }, false);
     });
 };
+
+function comprobarDatosContacto (){
+    var forms = document.getElementsByClassName('needs-validation');
+                Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        } else {
+                            event.preventDefault();  
+                            var email = document.getElementById('inputEmail').value;
+                            var nombre = document.getElementById('inputNombre').value;
+                            var nombreSpan = document.getElementById('nombreSpan');
+                            var emailSpan = document.getElementById('emailSpan');
+                            nombreSpan.textContent = nombre;
+                            emailSpan.textContent = '"' + email + '"';
+        
+                            var modalElement = document.getElementById('modalConfContacto');
+                            var modalInstance = new bootstrap.Modal(modalElement);
+                            modalInstance.show();
+                            form.reset();
+                            form.classList.remove('was-validated');
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+}
