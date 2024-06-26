@@ -68,7 +68,7 @@
     <ul class="row my-3">
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-categoria-colore.jpg');">
-                <a href="/html/secciones/servicios.html#servicios">
+                <a href="/html/secciones/servicios.html#cat-colores">
                     <img src="/recursos/Imagen-categoria-colore.jpg" class="img-responsive img-categoria" alt="Categoría Colores">
                     <span class="categoria-texto">Colores</span>
                 </a>
@@ -76,7 +76,7 @@
         </li>
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-cortes.jpg');">
-                <a href="/html/secciones/servicios.html#servicios">
+                <a href="/html/secciones/servicios.html#cat-cortes">
                     <img src="/recursos/Imagen-cortes.jpg" class="img-responsive img-categoria" alt="Categoría Cortes">
                     <span class="categoria-texto">Cortes</span>
                 </a>
@@ -84,7 +84,7 @@
         </li>
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-tratamientos.jpg');">
-                <a href="/html/secciones/servicios.html#servicios">
+                <a href="/html/secciones/servicios.html#cat-tratamientos">
                     <img src="/recursos/Imagen-tratamientos.jpg" class="img-responsive img-categoria" alt="Categoría Tratamientos">
                     <span class="categoria-texto">Tratamientos</span>
                 </a>
@@ -92,7 +92,7 @@
         </li>
         <li class="col-12 col-lg-3 categoria-item">
             <div class="categoria-content" style="background-image: url('/recursos/Imagen-peinado.jpg');">
-                <a href="/html/secciones/servicios.html#servicios">
+                <a href="/html/secciones/servicios.html#cat-peinados">
                     <img src="/recursos/Imagen-peinado.jpg" class="img-responsive img-categoria" alt="Categoría Peinados">
                     <span class="categoria-texto">Peinados</span>
                 </a>
@@ -121,6 +121,7 @@
         <div class="col-12 col-lg-6 contact-item">
             <h2>Contacto</h2>
             <p>Estamos aquí para atender todas tus consultas y ayudarte a planificar tu próxima visita a nuestra peluquería. Puedes comunicarte con nosotros a través de los siguientes medios o visitarnos directamente en nuestra ubicación. ¡Estamos encantados de recibirte!</p>
+            <button onclick="window.location.href='#formulario-contacto'" class="btn btn-success">Formulario de Contacto</button>
         </div>
         <div class="col-12 col-lg-6 contact-item">
             <h3>Nuestra Dirección</h3>
@@ -143,7 +144,7 @@
 
 <div class="container my-5">
     
-    <form action="" class="needs-validation row formulario g-3" novalidate>
+    <form action="" class="needs-validation row formulario g-3" id="formulario-contacto" novalidate>
     <h2 class="text-center">Formulario de contacto</h2>  
     <div class="form-group col-md-6">
             <label for="inputNombre" class="form-label">Nombre</label>
