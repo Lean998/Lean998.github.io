@@ -110,6 +110,9 @@ menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
 });
 
+function irTop(){
+    window.location.href='#';
+}
 
 function comprobarDatosReserva() {
     'use strict';
