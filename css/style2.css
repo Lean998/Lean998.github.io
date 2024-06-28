@@ -32,6 +32,7 @@ nav {
     background-color: #242424;
     color: #fff;
     padding: 15px 0;
+    position: relative;
 }
 
 .container {
@@ -78,16 +79,16 @@ nav {
 
 @media (max-width: 768px) {
     .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    left: -70%;
-    width: 100%;
-    background-color: #292929;
-    padding: 10px 0;
-    z-index: 12;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #292929;
+        padding: 10px 0;
+        z-index: 12;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
 
     .nav-links.active {

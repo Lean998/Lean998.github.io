@@ -110,6 +110,14 @@ menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
 });
 
+const navLinksList = document.querySelectorAll('.nav-links li a');
+navLinksList.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+    });
+});
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
